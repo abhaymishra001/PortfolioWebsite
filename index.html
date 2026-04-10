@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Abhay Mishra — Digital Curator &amp; Engineer</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,200..800&family=Manrope:wght@200..800&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+
+  <!-- Site Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Ambient Cursor Glow -->
+  <div class="cursor-glow" id="cursor-glow"></div>
+
+  <!-- ── Top Navigation ─────────────────────────────── -->
+  <nav>
+    <div class="brand">ABHAY MISHRA</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Capabilities</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Connect</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── Side Navigation Pill ──────────────────────── -->
+  <aside class="side-nav theme-transition">
+    <a href="#" title="Download CV">
+      <span class="material-symbols-outlined">description</span>
+    </a>
+    <a href="#about" title="About Me" class="active-nav">
+      <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">person</span>
+    </a>
+    <a href="#contact" title="Contact">
+      <span class="material-symbols-outlined">send</span>
+    </a>
+    <div class="divider theme-transition"></div>
+    <button id="theme-btn" title="Toggle Theme">
+      <span class="material-symbols-outlined" id="theme-icon">dark_mode</span>
+    </button>
+  </aside>
+
+  <!-- ── Main Content ──────────────────────────────── -->
+  <main>
+
+    <!-- Hero -->
+    <section class="hero-section">
+
+      <!-- Image + CGPA Card -->
+      <div class="hero-image-wrapper reveal">
+        <div class="hero-image-tile theme-transition">
+
+          <!-- Placeholder shown when photo is missing -->
+          <div class="hero-image-placeholder theme-transition">
+            <span class="material-symbols-outlined">add_photo_alternate</span>
+            <span class="label">Insert Photo Here</span>
+            <span class="hint">src="My Photo.jpg"</span>
+          </div>
+
+          <!-- Replace src with your photo path -->
+          <img src="My Photo.jpg" alt="Abhay Mishra" onerror="this.style.opacity='0';" />
+        </div>
+
+        <!-- CGPA Glass Card -->
+        <div id="stat-cgpa" class="cgpa-card glass-card theme-transition reveal delay-200">
+          <span class="label-tiny theme-transition">Academic Record</span>
+          <h2 class="cgpa-value theme-transition">
+            8.63 <span>CGPA</span>
+          </h2>
+          <div class="view-hint">
+            <span class="material-symbols-outlined" style="font-size:1rem">visibility</span>
+            Click to view transcript
+          </div>
+        </div>
+      </div><!-- /.hero-image-wrapper -->
+
+      <!-- Name + Meta -->
+      <div class="hero-text">
+        <span class="hero-tag theme-transition">— Computer Science And Engineering</span>
+        <h1 class="hero-name theme-transition reveal delay-100">Abhay<br />Mishra</h1>
+        <ul class="hero-meta theme-transition reveal delay-300">
+          <li>
+            <span class="material-symbols-outlined" style="font-size:0.875rem">location_on</span>
+            Ludhiana, Punjab, India
+          </li>
+          <li>
+            <span class="material-symbols-outlined" style="font-size:0.875rem">mail</span>
+            abhaymishrasln01@gmail.com
+          </li>
+        </ul>
+      </div>
+
+    </section><!-- /Hero -->
+
+    <!-- ── About ──────────────────────────────────── -->
+    <section id="about">
+      <h3 class="about-headline theme-transition reveal">
+        Hello! I'm Abhay, a Computer Science Engineering student currently studying at Lovely Professional University.
+        I enjoy writing clean code and building functional software that works efficiently.
+      </h3>
+
+      <div class="about-details">
+        <div class="reveal delay-100">
+          <span class="about-block-label theme-transition">Foundation &amp; Approach</span>
+          <p class="about-block-text theme-transition">
+            During my studies, I've built a solid foundation in core programming languages like C and Python.
+            I've also been applying these concepts to practical projects involving front-end web development and
+            PostgreSQL database management. For me, the focus is always on understanding how different pieces of
+            a tech stack connect to solve problems.
+          </p>
+        </div>
+        <div class="reveal delay-200">
+          <span class="about-block-label theme-transition">Continuous Exploration</span>
+          <p class="about-block-text theme-transition">
+            Tech is a vast field, and I consider myself a lifelong student. When I'm not keeping up with coursework
+            or debugging code, I spend my free time actively expanding my knowledge in Data Science, Artificial
+            Intelligence, Cloud Computing and many more.
+          </p>
+        </div>
+      </div>
+    </section><!-- /About -->
+
+    <!-- ── Skills ──────────────────────────────────── -->
+    <section id="skills">
+      <div class="skills-inner">
+        <span class="skills-tag theme-transition reveal">— Capabilities</span>
+
+        <div class="skills-grid">
+
+          <!-- Block 1: Programming -->
+          <div class="skill-block reveal">
+            <div class="skill-tile theme-transition">
+              <span class="skill-tile-label theme-transition">PROGRAMMING LANGUAGE</span>
+            </div>
+            <div class="skill-list-wrapper theme-transition">
+              <span class="skill-list-label theme-transition">Programming &amp; Web</span>
+              <ul class="skill-list theme-transition">
+                <li>C</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>PSQL</li>
+                <li>Object-Oriented Programming</li>
+                <li>HTML / CSS</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Block 2: Data / AI (offset) -->
+          <div class="skill-block offset reveal delay-100">
+            <div class="skill-tile theme-transition">
+              <span class="skill-tile-label theme-transition">AI AND DATA SCIENCE</span>
+            </div>
+            <div class="skill-list-wrapper theme-transition">
+              <span class="skill-list-label theme-transition">AI / Machine Learning</span>
+              <ul class="skill-list theme-transition">
+                <li>Machine Learning / Applied ML</li>
+                <li>Deep Learning</li>
+                <li>Generative AI</li>
+                <li>NumPy / Pandas</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Block 3: Cloud -->
+          <div class="skill-block reveal delay-200">
+            <div class="skill-tile theme-transition">
+              <span class="skill-tile-label theme-transition">CLOUD COMPUTING</span>
+            </div>
+            <div class="skill-list-wrapper theme-transition">
+              <span class="skill-list-label theme-transition">Infrastructure &amp; Soft Skills</span>
+              <ul class="skill-list theme-transition">
+                <li>Amazon Web Services (AWS)</li>
+                <li>Cloud Architecture &amp; Deployment</li>
+                <li>Cloud Economics</li>
+                <li>Analytical &amp; Strategic Thinking</li>
+              </ul>
+            </div>
+          </div>
+
+        </div><!-- /.skills-grid -->
+      </div>
+    </section><!-- /Skills -->
+
+    <!-- ── Certifications ──────────────────────────── -->
+    <section id="certifications">
+      <div class="section-header reveal theme-transition">
+        <h2 class="section-title theme-transition">Certifications</h2>
+        <span class="section-subtitle theme-transition">Verified Achievements</span>
+      </div>
+
+      <!-- Cert 1 -->
+      <div class="cert-item reveal" data-cert-image="">
+        <div class="max-w-2xl">
+          <h4 class="cert-name theme-transition">Fundamental of Machine Learning &amp; Artificial Intelligence</h4>
+          <p class="cert-issuer theme-transition">Amazon Web Services (AWS)</p>
+        </div>
+        <div class="cert-date-block">
+          <span class="cert-date-label theme-transition">ISSUED</span>
+          <span class="cert-date-value theme-transition">Dec 2025</span>
+        </div>
+      </div>
+
+      <!-- Cert 2 -->
+      <div class="cert-item reveal delay-100" data-cert-image="CloudComputing.png">
+        <div>
+          <h4 class="cert-name theme-transition">Introduction to Cloud Computing</h4>
+          <p class="cert-issuer theme-transition">Infosys Springboard</p>
+        </div>
+        <div class="cert-date-block">
+          <span class="cert-date-label theme-transition">ISSUED</span>
+          <span class="cert-date-value theme-transition">Mar 2026</span>
+        </div>
+      </div>
+
+      <!-- Cert 3 -->
+      <div class="cert-item reveal delay-200" data-cert-image="">
+        <div>
+          <h4 class="cert-name theme-transition">Introduction to Programming with Python</h4>
+          <p class="cert-issuer theme-transition">Harvard University</p>
+        </div>
+        <div class="cert-date-block">
+          <span class="cert-date-label theme-transition">ISSUED</span>
+          <span class="cert-date-value theme-transition">Sep 2025</span>
+        </div>
+      </div>
+
+      <!-- Cert 4 -->
+      <div class="cert-item reveal delay-300" data-cert-image="Python for Data Analysis.png">
+        <div>
+          <h4 class="cert-name theme-transition">Python For Data Analysis</h4>
+          <p class="cert-issuer theme-transition">Coursera</p>
+        </div>
+        <div class="cert-date-block">
+          <span class="cert-date-label theme-transition">ISSUED</span>
+          <span class="cert-date-value theme-transition">Jul 2025</span>
+        </div>
+      </div>
+
+      <!-- Cert 5 -->
+      <div class="cert-item reveal" data-cert-image="TimeManagement.jpg">
+        <div>
+          <h4 class="cert-name theme-transition">Effective Time Management</h4>
+          <p class="cert-issuer theme-transition">Techveda</p>
+        </div>
+        <div class="cert-date-block">
+          <span class="cert-date-label theme-transition">ISSUED</span>
+          <span class="cert-date-value theme-transition">Oct 2025</span>
+        </div>
+      </div>
+
+      <!-- Cert 6 -->
+      <div class="cert-item reveal delay-100" data-cert-image="Introduction to python.png">
+        <div>
+          <h4 class="cert-name theme-transition">Introduction to Python</h4>
+          <p class="cert-issuer theme-transition">Infosys Springboard</p>
+        </div>
+        <div class="cert-date-block">
+          <span class="cert-date-label theme-transition">ISSUED</span>
+          <span class="cert-date-value theme-transition">January 2026</span>
+        </div>
+      </div>
+
+    </section><!-- /Certifications -->
+
+    <!-- ── Contact ─────────────────────────────────── -->
+    <section id="contact">
+      <div class="section-header reveal theme-transition">
+        <h2 class="section-title theme-transition">Connect</h2>
+        <span class="section-subtitle theme-transition">Direct Line</span>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Email -->
+        <div class="contact-tile glass-card theme-transition">
+          <span class="material-symbols-outlined theme-transition">mail</span>
+          <div>
+            <h3>Email</h3>
+            <a href="mailto:abhaymishrasln01@gmail.com">abhaymishrasln01@gmail.com</a>
+          </div>
+        </div>
+
+        <!-- Location -->
+        <div class="contact-tile glass-card theme-transition">
+          <span class="material-symbols-outlined theme-transition">location_on</span>
+          <div>
+            <h3>Current Location</h3>
+            <p class="theme-transition">Ludhiana, Punjab, India</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-wrapper reveal delay-100">
+        <a href="https://www.linkedin.com/in/abhaymishra07/" target="_blank" class="cta-btn theme-transition">
+          Connect with me
+        </a>
+      </div>
+    </section><!-- /Contact -->
+
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────── -->
+  <footer class="theme-transition">
+    <div class="footer-brand theme-transition">ABHAY MISHRA</div>
+    <ul class="footer-links">
+      <li><a href="https://github.com/abhaymishra001" target="_blank">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/abhaymishra07/" target="_blank">LinkedIn</a></li>
+    </ul>
+    <p class="footer-copy theme-transition">© 2026 B.Tech CSE</p>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!--  CGPA / Transcript Modal                        -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <div id="cgpa-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="cgpa-modal-title">
+    <div class="modal-content theme-transition">
+
+      <button class="modal-close-btn" id="close-cgpa" aria-label="Close transcript">
+        <span class="material-symbols-outlined" style="font-size:1.5rem">close</span>
+      </button>
+
+      <div class="modal-header theme-transition">
+        <span class="modal-label theme-transition">Transcript</span>
+        <h2 class="modal-title theme-transition" id="cgpa-modal-title">Academic Record</h2>
+      </div>
+
+      <!-- Semester 1 (completed) -->
+      <div class="transcript-semester">
+        <div class="transcript-semester-header theme-transition">
+          <h3 class="transcript-semester-title theme-transition">Semester 1</h3>
+          <span class="transcript-tgpa theme-transition">TGPA: <strong>8.63</strong></span>
+        </div>
+
+        <div class="transcript-course theme-transition">
+          <div>
+            <span class="course-code theme-transition">CSE111</span>
+            <span class="course-name theme-transition">Orientation to Computing-I</span>
+          </div>
+          <div class="course-grade">
+            <span class="grade-value theme-transition">A+</span>
+            <span class="grade-label theme-transition">Excellent</span>
+          </div>
+        </div>
+
+        <div class="transcript-course theme-transition">
+          <div>
+            <span class="course-code theme-transition">CSE326</span>
+            <span class="course-name theme-transition">Internet Programming Lab</span>
+          </div>
+          <div class="course-grade">
+            <span class="grade-value theme-transition">A+</span>
+            <span class="grade-label theme-transition">Excellent</span>
+          </div>
+        </div>
+
+        <div class="transcript-course theme-transition">
+          <div>
+            <span class="course-code theme-transition">INT108</span>
+            <span class="course-name theme-transition">Python Programming</span>
+          </div>
+          <div class="course-grade">
+            <span class="grade-value theme-transition">A+</span>
+            <span class="grade-label theme-transition">Excellent</span>
+          </div>
+        </div>
+
+        <div class="transcript-course theme-transition">
+          <div>
+            <span class="course-code theme-transition">MEC136</span>
+            <span class="course-name theme-transition">Engineering Drawing</span>
+          </div>
+          <div class="course-grade">
+            <span class="grade-value theme-transition">A+</span>
+            <span class="grade-label theme-transition">Excellent</span>
+          </div>
+        </div>
+
+        <div class="transcript-course theme-transition">
+          <div>
+            <span class="course-code muted theme-transition">MTH165</span>
+            <span class="course-name theme-transition">Mathematics for Engineers</span>
+          </div>
+          <div class="course-grade">
+            <span class="grade-value secondary theme-transition">A</span>
+            <span class="grade-label theme-transition">Very Good</span>
+          </div>
+        </div>
+
+        <div class="transcript-course theme-transition">
+          <div>
+            <span class="course-code muted theme-transition">PHY110</span>
+            <span class="course-name theme-transition">Engineering Physics</span>
+          </div>
+          <div class="course-grade">
+            <span class="grade-value secondary theme-transition">A</span>
+            <span class="grade-label theme-transition">Very Good</span>
+          </div>
+        </div>
+      </div><!-- /Semester 1 -->
+
+      <!-- Semesters 2–8 (upcoming) -->
+      <div class="semester-upcoming">
+        <div class="transcript-semester-header theme-transition">
+          <h3 class="transcript-semester-title theme-transition">Semester 2</h3>
+          <span class="transcript-tgpa theme-transition">Upcoming</span>
+        </div>
+      </div>
+
+      <div class="semester-upcoming">
+        <div class="transcript-semester-header theme-transition">
+          <h3 class="transcript-semester-title theme-transition">Semester 3</h3>
+          <span class="transcript-tgpa theme-transition">Upcoming</span>
+        </div>
+      </div>
+
+      <div class="semester-upcoming">
+        <div class="transcript-semester-header theme-transition">
+          <h3 class="transcript-semester-title theme-transition">Semester 4</h3>
+          <span class="transcript-tgpa theme-transition">Upcoming</span>
+        </div>
+      </div>
+
+      <div class="semester-upcoming">
+        <div class="transcript-semester-header theme-transition">
+          <h3 class="transcript-semester-title theme-transition">Semester 5</h3>
+          <span class="transcript-tgpa theme-transition">Upcoming</span>
+        </div>
+      </div>
+
+      <div class="semester-upcoming">
+        <div class="transcript-semester-header theme-transition">
+          <h3 class="transcript-semester-title theme-transition">Semester 6</h3>
+          <span class="transcript-tgpa theme-transition">Upcoming</span>
+        </div>
+      </div>
+
+      <div class="semester-upcoming">
+        <div class="transcript-semester-header theme-transition">
+          <h3 class="transcript-semester-title theme-transition">Semester 7</h3>
+          <span class="transcript-tgpa theme-transition">Upcoming</span>
+        </div>
+      </div>
+
+      <div class="semester-upcoming">
+        <div class="transcript-semester-header theme-transition">
+          <h3 class="transcript-semester-title theme-transition">Semester 8</h3>
+          <span class="transcript-tgpa theme-transition">Upcoming</span>
+        </div>
+      </div>
+
+    </div><!-- /.modal-content -->
+  </div><!-- /#cgpa-modal -->
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!--  Certification Image Modal                      -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <div id="cert-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Certification viewer">
+    <div class="modal-content-img">
+
+      <button class="cert-modal-close-outer" id="close-cert" aria-label="Close certification">
+        <span class="material-symbols-outlined" style="font-size:1.875rem">close</span>
+      </button>
+
+      <!-- When a cert image path is provided via data-cert-image -->
+      <div id="cert-image-container" class="hidden" style="width:100%">
+        <img id="cert-modal-img" src="" alt="Certification" style="width:100%;height:auto;object-fit:contain;border-radius:2px;
+                    box-shadow:0 20px 60px rgba(0,0,0,0.2);
+                    border:1px solid var(--border-color);" />
+      </div>
+
+      <!-- Fallback when no image is attached -->
+      <div id="cert-fallback-container" class="cert-fallback hidden theme-transition">
+        <span class="material-symbols-outlined">description</span>
+        <h3 class="theme-transition">No Certificate Available</h3>
+        <p class="theme-transition">A visual copy for this credential has not been attached to the registry yet.</p>
+      </div>
+
+    </div><!-- /.modal-content-img -->
+  </div><!-- /#cert-modal -->
+
+  <!-- Site Script -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
