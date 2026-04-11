@@ -64,7 +64,7 @@
         }
       });
     },
-    { root: null, rootMargin: '0px', threshold: 0.15 }
+    { root: null, rootMargin: '0px 0px -80px 0px', threshold: 0.05 }
   );
 
   document.querySelectorAll('.reveal').forEach(function (el) {
